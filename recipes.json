@@ -61,10 +61,10 @@
         "recipe": ["virtualbox"]
     },
     {
-        "name": "Skype",
+        "name": "vpn",
         "description": "A videocall software from Microsoft",
         "type": "snap",
-        "recipe": ["skype", "--classic"]
+        "recipe": ["vpn", "--classic"]
     },
     {
         "name": "Thunderbird",
