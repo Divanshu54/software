@@ -187,14 +187,14 @@ installVirtualBox()
   addPackage "virtualbox"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Install Skype")
-taskMessages+=("Processing Skype")
+taskNames+=("Install vpn")
+taskMessages+=("Processing vpn")
 taskDescriptions+=("A videocall software from Microsoft")
-taskRecipes+=("installSkype")
+taskRecipes+=("installvpn")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
-installSkype()
+installvpn()
 {
   installPackage "https://go.skype.com/skypeforlinux-64.deb"
 }
