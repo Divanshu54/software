@@ -189,14 +189,18 @@ installVirtualBox()
 #------------------------------------------------------------------------------
 taskNames+=("Installvpn")
 taskMessages+=("Processing vpn")
-taskDescriptions+=("A videocall software from Microsoft")
+taskDescriptions+=("A fortclient VPN for ubuntu")
 taskRecipes+=("installvpn")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
 installvpn()
 {
-  installPackage "https://go.skype.com/skypeforlinux-64.deb"
+  installPackage "sudo add-apt-repository ppa:ar-lex/fortisslvpn"
+  else
+        sudo apt-get update
+
+    fi
 }
 #------------------------------------------------------------------------------
 taskNames+=("Install Thunderbird")
