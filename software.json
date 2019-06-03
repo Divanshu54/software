@@ -347,9 +347,9 @@
         "recipe": ["ppa:agornostal/ulauncher", "ulauncher"]
     },
     {
-        "name": "forticlient",
-        "description": "Application fortisslvpn for unix",
+        "name": "Jumpapp",
+        "description": "Application switcher for Linux",
         "type": "ppa",
-        "recipe": ["ppa:ar-lex/fortisslvpn.ppa", "fortisslvpn"
-        }
+        "recipe": ["ppa:mkropat/ppa", "jumpapp"]
+    }
 ]
