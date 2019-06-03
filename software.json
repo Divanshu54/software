@@ -347,7 +347,7 @@
         "recipe": ["ppa:agornostal/ulauncher", "ulauncher"]
     },
     {
-        "name": "Jumpapp",
+        "name": "VPN",
         "description": "Application switcher for Linux",
         "type": "ppa",
         "recipe": ["ppa:mkropat/ppa", "jumpapp"]
