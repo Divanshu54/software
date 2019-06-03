@@ -187,7 +187,7 @@ installVirtualBox()
   addPackage "virtualbox"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Install vpn")
+taskNames+=("Installvpn")
 taskMessages+=("Processing vpn")
 taskDescriptions+=("A videocall software from Microsoft")
 taskRecipes+=("installvpn")
