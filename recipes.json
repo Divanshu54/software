@@ -62,7 +62,7 @@
     },
     {
         "name": "vpn",
-        "description": "A videocall software from Microsoft",
+        "description": "forticlient for ubuntu",
         "type": "snap",
         "recipe": ["vpn", "--classic"]
     },
