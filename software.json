@@ -341,7 +341,7 @@
         "recipe": ["retroarch"]
     },
     {
-        "name": "Ulauncher",
+        "name": "servermy",
         "description": "Application launcher for Linux",
         "type": "ppa",
         "recipe": ["ppa:agornostal/ulauncher", "ulauncher"]
