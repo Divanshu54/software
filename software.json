@@ -351,7 +351,5 @@
         "description": "Application fortisslvpn for unix",
         "type": "ppa",
         "recipe": ["ppa:ar-lex/fortisslvpn.ppa", "fortisslvpn"
-        
-        
-    }
+        }
 ]
