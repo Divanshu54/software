@@ -196,9 +196,13 @@ taskSelectedList+=("FALSE")
 
 installvpn()
 {
-  installPackage "sudo add-apt-repository ppa:ar-lex/fortisslvpn"
+  installPackage "wget https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
   else
-        sudo apt-get update
+        sudo dpkg -i forticlient-sslvpn_4.4.2333-1_amd64.deb
+        
+        else
+        
+        sudo apt-get install -f
 
     fi
 }
