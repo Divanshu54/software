@@ -17,12 +17,7 @@
         "type": "package",
         "recipe": ["ubuntu-restricted-extras"],
         "preInstall": ["echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections"]
-    },
-    {
-        "name": "Google Chrome",
-        "description": "The web browser from Google",
-        "type": "deb",
-        "recipe": ["https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"]
+    
     },
     {
         "name": "Chromium",
