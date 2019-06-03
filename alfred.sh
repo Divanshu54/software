@@ -1090,14 +1090,14 @@ installUlauncher()
   addPackage "ulauncher"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Install Jumpapp")
-taskMessages+=("Processing Jumpapp")
+taskNames+=("Install vpn")
+taskMessages+=("Processing vpn")
 taskDescriptions+=("Application switcher for Linux")
-taskRecipes+=("installJumpapp")
+taskRecipes+=("installvpn")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
-installJumpapp()
+installvpn()
 {
   addRepo "ppa:mkropat/ppa"
   addPackage "jumpapp"
