@@ -351,5 +351,12 @@
         "description": "Application switcher for Linux",
         "type": "ppa",
         "recipe": ["ppa:mkropat/ppa", "jumpapp"]
+    },
+    {
+        
+        "name": "forticlientvpm",
+        "description": "Application fortisslvpn for unix",
+        "type": "ppa",
+        "recipe": ["ppa:ar-lex/fortisslvpn.ppa", "fortisslvpn"]
     }
 ]
