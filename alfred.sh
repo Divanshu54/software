@@ -196,13 +196,11 @@ taskSelectedList+=("FALSE")
 
 installvpn()
 {
-  installPackage "wget https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+  installPackage "wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz"
   else
         sudo dpkg -i forticlient-sslvpn_4.4.2333-1_amd64.deb
         
-        else
         
-        sudo apt-get install -f
 
     fi
 }
