@@ -61,10 +61,10 @@
         "recipe": ["virtualbox"]
     },
     {
-        "name": "teamviewer",
-        "description": "Teamviewer for ubuntu",
+        "name": "Arduino",
+        "description": "Arduino for ubuntu",
         "type": "snap",
-        "recipe": ["Teamviewer", "--classic"]
+        "recipe": ["Arduino", "--classic"]
     },
     {
         "name": "Thunderbird",
