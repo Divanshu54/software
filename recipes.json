@@ -61,10 +61,10 @@
         "recipe": ["virtualbox"]
     },
     {
-        "name": "vpn",
-        "description": "forticlient for ubuntu",
+        "name": "teamviewer",
+        "description": "Teamviewer for ubuntu",
         "type": "snap",
-        "recipe": ["vpn", "--classic"]
+        "recipe": ["Teamviewer", "--classic"]
     },
     {
         "name": "Thunderbird",
