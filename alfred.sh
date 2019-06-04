@@ -189,8 +189,8 @@ installVirtualBox()
 #------------------------------------------------------------------------------
 taskNames+=("Install Arduino")
 taskMessages+=("Processing Arduino")
-taskDescriptions+=("Arduino for ubuntu")
-taskRecipes+=("install Arduino")
+taskDescriptions+=("The official IDE for the Arduino board")
+taskRecipes+=("installArduino")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
@@ -205,8 +205,6 @@ installArduino()
   tar xf /tmp/arduino.tar.xz -C /tmp
   mv /tmp/arduino-1.6.13/ /opt/arduino
   /opt/arduino/install.sh
-}
-      
 }
 #------------------------------------------------------------------------------
 taskNames+=("Install Thunderbird")
