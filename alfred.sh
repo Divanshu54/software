@@ -201,13 +201,7 @@ else
     wget -O forticlientsslvpn_linux_4.4.2331.tar.gz "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
     
     fi
-        
-     tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz -C /home/"$SUDO_USER"
-     cd forticlientsslvpn/
-     sudo ./fortisslvpn.sh
-        
-
-    fi
+      
 }
 #------------------------------------------------------------------------------
 taskNames+=("Install Thunderbird")
