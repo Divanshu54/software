@@ -194,9 +194,18 @@ taskRecipes+=("install Teamviewer")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
-installteamviewer()
+installArduino()
 {
-installPackage "wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+  if [[ $OSarch == "x86_64" ]]; then
+    wget -q -O /tmp/arduino.tar.xz https://downloads.arduino.cc/arduino-1.8.5-linux64.tar.xz
+  else
+    wget -q -O /tmp/arduino.tar.xz https://downloads.arduino.cc/arduino-1.8.5-linux32.tar.xz
+  fi
+
+  tar xf /tmp/arduino.tar.xz -C /tmp
+  mv /tmp/arduino-1.6.13/ /opt/arduino
+  /opt/arduino/install.sh
+}
       
 }
 #------------------------------------------------------------------------------
