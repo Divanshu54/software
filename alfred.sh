@@ -187,16 +187,16 @@ installVirtualBox()
   addPackage "virtualbox"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Install vpn")
-taskMessages+=("Processing vpn")
-taskDescriptions+=("A fortclient VPN for ubuntu")
-taskRecipes+=("install vpn")
+taskNames+=("Install teamviewer")
+taskMessages+=("Processing teamviewer")
+taskDescriptions+=("Teamviewer for ubuntu")
+taskRecipes+=("install Teamviewer")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
-installvpn()
+installteamviewer()
 {
-installPackage "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+installPackage "wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
       
 }
 #------------------------------------------------------------------------------
