@@ -196,16 +196,18 @@ taskSelectedList+=("FALSE")
 
 installvpn()
 {
-  echo "Installing forticlint"
-                                sudo rm /usr/local/bin/forticlientsslvpn
-                                wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
-                                tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz
-                                cd forticlientsslvpn/
-                                sudo ./fortisslvpn.sh
-				sudo apt update
-			
-				;;
+else
+    if [[ $OSarch == "x86_64" ]]; then      
+    wget -O forticlientsslvpn_linux_4.4.2331.tar.gz "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+    
+    fi
+        
+     tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz -C /home/"$SUDO_USER"
+     cd forticlientsslvpn/
+     sudo ./fortisslvpn.sh
+        
 
+    fi
 }
 #------------------------------------------------------------------------------
 taskNames+=("Install Thunderbird")
