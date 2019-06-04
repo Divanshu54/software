@@ -187,20 +187,16 @@ installVirtualBox()
   addPackage "virtualbox"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Installvpn")
+taskNames+=("Install vpn")
 taskMessages+=("Processing vpn")
 taskDescriptions+=("A fortclient VPN for ubuntu")
-taskRecipes+=("installvpn")
+taskRecipes+=("install vpn")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
 installvpn()
 {
-else
-    if [[ $OSarch == "x86_64" ]]; then     
-    wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
- 
-    fi
+installPackage "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
       
 }
 #------------------------------------------------------------------------------
