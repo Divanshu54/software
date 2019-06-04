@@ -187,10 +187,10 @@ installVirtualBox()
   addPackage "virtualbox"
 }
 #------------------------------------------------------------------------------
-taskNames+=("Install teamviewer")
-taskMessages+=("Processing teamviewer")
-taskDescriptions+=("Teamviewer for ubuntu")
-taskRecipes+=("install Teamviewer")
+taskNames+=("Install Arduino")
+taskMessages+=("Processing Arduino")
+taskDescriptions+=("Arduino for ubuntu")
+taskRecipes+=("install Arduino")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
