@@ -198,8 +198,25 @@ installvpn()
 {
 else
     if [[ $OSarch == "x86_64" ]]; then      
-    wget -O forticlientsslvpn_linux_4.4.2331.tar.gz "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
-    
+ download forticlient
+https://hadler.me/linux/forticlient-sslvpn-deb-packages
+
+# install (get error on missing dependencies)
+sudo dpkg -i forticlient.deb
+
+# https://askubuntu.com/questions/40011/how-to-let-dpkg-i-install-dependencies-for-me
+# install dependencies
+sudo apt-get -f install
+
+# install forticlient
+sudo dpkg -i forticlient.deb
+
+# https://askubuntu.com/questions/81797/nslookup-finds-ip-but-ping-doesnt
+sudo apt-get remove libnss-mdns
+
+# start forticlient
+cd /opt/forticlient-sslvpn
+sudo ./fortisslvpn.sh    
     fi
       
 }
