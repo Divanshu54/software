@@ -35,6 +35,12 @@
         "description": "The web browser from Mozilla",
         "type": "snap",
         "recipe": ["firefox"]
+        },
+    {
+        "name": "VPN",
+        "description": "The VPN services to use external services",
+        "type": "snap",
+        "recipe": ["VPN"]
     },
     {
         "name": "Opera",
