@@ -43,76 +43,7 @@
         "recipe": ["opera"]
     },
     {
-        "name": "Transmission",
-        "description": "A light bittorrent download client",
-        "type": "ppa",
-        "recipe": ["ppa:transmissionbt/ppa", "transmission-gtk"]
-    },
-    {
-        "name": "Dropbox",
-        "description": "A cloud hosting service to store your files online",
-        "type": "deb",
-        "recipe": ["https://linux.dropbox.com/packages/ubuntu/dropbox_2019.01.31_amd64.deb"]
-    },
-    {
-        "name": "VirtualBox",
-        "description": "A virtualization software to run other OSes on top of your current OS",
-        "type": "package",
-        "recipe": ["virtualbox"]
-    },
-    {
-        "name": "Skype",
-        "description": "A videocall software from Microsoft",
-        "type": "snap",
-        "recipe": ["skype", "--classic"]
-    },
-    {
-        "name": "Thunderbird",
-        "description": "A mail client from Mozilla",
-        "type": "package",
-        "recipe": ["thunderbird"]
-    },
-    {
-        "name": "Mailspring",
-        "description": "A beautiful mail client",
-        "type": "snap",
-        "recipe": ["mailspring"]
-    },
-    {
-        "name": "Telegram",
-        "description": "A messenger application",
-        "type": "snap",
-        "recipe": ["telegram-desktop"]
-    },
-    {
-        "name": "Slack",
-        "description": "A team communication application",
-        "type": "snap",
-        "recipe": ["slack", "--classic"]
-    },
-    {
-        "name": "VLC",
-        "description": "The most famous multimedia player",
-        "type": "snap",
-        "recipe": ["vlc"]
-    },
-    {
-        "name": "Kazam",
-        "description": "A tool to record your screen and take screenshots",
-        "type": "package",
-        "recipe": ["kazam"]
-    },
-    {
-        "name": "Handbrake",
-        "description": "A video transcoder",
-        "type": "ppa",
-        "recipe": ["ppa:stebbins/handbrake-releases", "handbrake-gtk", "handbrake-cli"]
-    },
-    {
-        "name": "Spotify",
-        "description": "One of the best music streaming apps",
-        "type": "snap",
-        "recipe": ["spotify"]
+       
   
     }
 ]
