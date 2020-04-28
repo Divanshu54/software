@@ -1,4 +1,3 @@
-
 [
     {
         "name": "Update packages",
@@ -31,7 +30,6 @@
         "type": "snap",
         "recipe": ["chromium"]
     },
-   
     {
         "name": "Firefox",
         "description": "The web browser from Mozilla",
@@ -80,4 +78,41 @@
         "type": "snap",
         "recipe": ["mailspring"]
     },
- {
+    {
+        "name": "Telegram",
+        "description": "A messenger application",
+        "type": "snap",
+        "recipe": ["telegram-desktop"]
+    },
+    {
+        "name": "Slack",
+        "description": "A team communication application",
+        "type": "snap",
+        "recipe": ["slack", "--classic"]
+    },
+    {
+        "name": "VLC",
+        "description": "The most famous multimedia player",
+        "type": "snap",
+        "recipe": ["vlc"]
+    },
+    {
+        "name": "Kazam",
+        "description": "A tool to record your screen and take screenshots",
+        "type": "package",
+        "recipe": ["kazam"]
+    },
+    {
+        "name": "Handbrake",
+        "description": "A video transcoder",
+        "type": "ppa",
+        "recipe": ["ppa:stebbins/handbrake-releases", "handbrake-gtk", "handbrake-cli"]
+    },
+    {
+        "name": "Spotify",
+        "description": "One of the best music streaming apps",
+        "type": "snap",
+        "recipe": ["spotify"]
+  
+    }
+]
