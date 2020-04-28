@@ -1,3 +1,4 @@
+
 [
     {
         "name": "Update packages",
@@ -6,6 +7,75 @@
         "recipe": ["apt", "upgrade", "-y"]
     },
     {
-
-    }
-]
+        "name": "Automatic drivers",
+        "description": "Install drivers that are appropriate for automatic installation",
+        "type": "generic",
+        "recipe": ["ubuntu-drivers", "autoinstall"]
+    },
+    {
+        "name": "Java, Flash and codecs",
+        "description": "Install non-open-source packages like Java, Flash plugin, Unrar, and some audio and video codecs like MP3/AVI/MPEG",
+        "type": "package",
+        "recipe": ["ubuntu-restricted-extras"],
+        "preInstall": ["echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections"]
+    },
+    {
+        "name": "Google Chrome",
+        "description": "The web browser from Google",
+        "type": "deb",
+        "recipe": ["https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"]
+    },
+    {
+        "name": "Chromium",
+        "description": "The open-source web browser providing the code for Google Chrome",
+        "type": "snap",
+        "recipe": ["chromium"]
+    },
+    {
+        "name": "Firefox",
+        "description": "The web browser from Mozilla",
+        "type": "snap",
+        "recipe": ["firefox"]
+    },
+    {
+        "name": "Opera",
+        "description": "Just another web browser",
+        "type": "snap",
+        "recipe": ["opera"]
+    },
+    {
+        "name": "Transmission",
+        "description": "A light bittorrent download client",
+        "type": "ppa",
+        "recipe": ["ppa:transmissionbt/ppa", "transmission-gtk"]
+    },
+    {
+        "name": "Dropbox",
+        "description": "A cloud hosting service to store your files online",
+        "type": "deb",
+        "recipe": ["https://linux.dropbox.com/packages/ubuntu/dropbox_2019.01.31_amd64.deb"]
+    },
+    {
+        "name": "VirtualBox",
+        "description": "A virtualization software to run other OSes on top of your current OS",
+        "type": "package",
+        "recipe": ["virtualbox"]
+    },
+    {
+        "name": "Skype",
+        "description": "A videocall software from Microsoft",
+        "type": "snap",
+        "recipe": ["skype", "--classic"]
+    },
+    {
+        "name": "Thunderbird",
+        "description": "A mail client from Mozilla",
+        "type": "package",
+        "recipe": ["thunderbird"]
+    },
+    {
+        "name": "Mailspring",
+        "description": "A beautiful mail client",
+        "type": "snap",
+        "recipe": ["mailspring"]
+    },
