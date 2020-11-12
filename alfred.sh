@@ -144,15 +144,14 @@ taskSelectedList+=("FALSE")
 
 installforticlient()
 {
-				echo "Installing forticlint"
-                                sudo rm /usr/local/bin/forticlientsslvpn
-                                wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
-                                tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz
-                                cd forticlientsslvpn/
-                                sudo ./fortisslvpn.sh
-				sudo apt update
-			
-				;;
+f [[ $OSarch == "x86_64" ]]; then
+    wget -O /tmp/forticlient.deb "https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64%20(1).deb"
+ 
+  fi
+  
+  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient.deb # Needs dpkg and variable set to avoid prompt
+  rm /tmp/opera.deb
+				
   fi
 }
 
