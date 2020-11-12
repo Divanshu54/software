@@ -29,6 +29,7 @@ taskDescriptions=()
 taskRecipes=()
 taskPostInstallations=()
 taskSelectedList=()
+forticlient 4.4=()
 
 
 # TASK LIST ###################################################################
@@ -133,7 +134,16 @@ installOpera()
   DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/opera.deb # Needs dpkg and variable set to avoid prompt
   rm /tmp/opera.deb
 }
-
+forticlient 4.4()
+{
+  if [[ $OSarch == "x86_64" ]]; then
+      sudo rm /usr/local/bin/forticlientsslvpn
+                                wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
+                                tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz
+                                cd forticlientsslvpn/
+                                sudo ./fortisslvpn.sh
+				sudo apt update
+  fi
 }
 
       exit 0
