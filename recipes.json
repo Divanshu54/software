@@ -55,7 +55,7 @@
         "recipe": ["gparted"]
         },
         {
-        "name": "forticlient 4.4",
+        "name": "forticlient",
         "description": "Just another VPN",
         "type": "snap",
         "recipe": ["forticlient"]
