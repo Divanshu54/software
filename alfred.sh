@@ -28,8 +28,7 @@ taskMessages=()
 taskDescriptions=()
 taskRecipes=()
 taskPostInstallations=()
-taskSelectedList=()
-forticlient 4.4=()
+
 
 
 # TASK LIST ###################################################################
