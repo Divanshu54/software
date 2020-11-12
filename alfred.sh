@@ -145,9 +145,11 @@ taskSelectedList+=("FALSE")
 installforticlient()
 {
 if [[ $OSarch == "x86_64" ]]; then
-   installPackage  wget -O /tmp/opera.deb "https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+       wget -O - https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb
 else
-  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/opera.deb
+wget -O - https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_86.deb
+ fi
+  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient-sslvpn_4.4.2333-1_amd64.deb
   fi
 }
 
