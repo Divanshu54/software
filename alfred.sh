@@ -145,9 +145,9 @@ taskSelectedList+=("FALSE")
 installforticlient()
 {
 if [[ $OSarch == "x86_64" ]]; then
-wget -O /tmp/forticlient.deb "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+wget -O /Download/forticlient.deb "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
 fi
-DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient.deb # Needs dpkg and variable set to avoid prompt
+DEBIAN_FRONTEND=noninteractive dpkg -i /Download/forticlient.deb # Needs dpkg and variable set to avoid prompt
   rm /tmp/forticlient.deb
 
 
