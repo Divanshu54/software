@@ -28,7 +28,7 @@ taskMessages=()
 taskDescriptions=()
 taskRecipes=()
 taskPostInstallations=()
-forticlient 4.4
+
 
 
 
@@ -137,11 +137,12 @@ installOpera()
 #------------------------------------------------------------------------------
 taskNames+=("forticlient")
 taskMessages+=("Processing forticlient")
-taskDescriptions+=("Just another web browser")
+taskDescriptions+=("flipkart VPN")
 taskRecipes+=("installforticlient")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
-installforticlient 4.4()
+
+installforticlient()
 {
 if [[ $OSarch == "x86_64" ]]; then
 wget -O /tmp/forticlient.deb "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
