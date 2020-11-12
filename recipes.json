@@ -35,39 +35,23 @@
         "description": "The web browser from Mozilla",
         "type": "snap",
         "recipe": ["firefox"]
-   
- 
-
- 
-
     },
     {
         "name": "VLC",
         "description": "The most famous multimedia player",
         "type": "snap",
         "recipe": ["vlc"]
-
- 
-
-   
     },
     {
         "name": "LibreOffice",
         "description": "A complete office suite: word processor, spreadsheets, slideshows, drawings and more",
         "type": "snap",
         "recipe": ["libreoffice"]
-
-    
- 
-    
     },
     {
         "name": "GParted",
         "description": "A tool to make partitions in your hard drives",
         "type": "package",
         "recipe": ["gparted"]
-
-   
-  
     }
 ]
