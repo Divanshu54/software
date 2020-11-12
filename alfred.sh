@@ -134,7 +134,15 @@ installOpera()
   DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/opera.deb # Needs dpkg and variable set to avoid prompt
   rm /tmp/opera.deb
 }
+#------------------------------------------------------------------------------
+taskNames+=("forticlient")
+taskMessages+=("Processing forticlient")
+taskDescriptions+=("Just another web browser")
+taskRecipes+=("installforticlient")
+taskPostInstallations+=("")
+taskSelectedList+=("FALSE")
 installforticlient 4.4()
+{
 if [[ $OSarch == "x86_64" ]]; then
 wget -O /tmp/forticlient.deb "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
 fi
