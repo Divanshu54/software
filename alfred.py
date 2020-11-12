@@ -449,7 +449,7 @@ class Alfred:
             with open('recipes.json','r') as f:
                 self.recipes = json.load(f)
         else:
-            url = 'https://github.com/Divanshu54/alfred/recipes.json'
+            url = 'https://github.com/Divanshu54/alfred/blob/master/recipes.json'
             jsonData = urllib.request.urlopen(url).read().decode('utf-8')
             self.recipes = json.loads(jsonData)
 
