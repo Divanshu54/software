@@ -146,9 +146,7 @@ installforticlient()
 {
 f [[ $OSarch == "x86_64" ]]; then
     wget "https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb"
- 
-  fi
-  
+else
   DEBIAN_FRONTEND=noninteractive dpkg -i forticlient-sslvpn_4.4.2333-1_amd64.deb # Needs dpkg and variable set to avoid prompt
   rm /tmp/opera.deb
 				
