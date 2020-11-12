@@ -339,17 +339,6 @@
         "description": "A retro games emulator frontend",
         "type": "snap",
         "recipe": ["retroarch"]
-    },
-    {
-        "name": "Ulauncher",
-        "description": "Application launcher for Linux",
-        "type": "ppa",
-        "recipe": ["ppa:agornostal/ulauncher", "ulauncher"]
-    },
-    {
-        "name": "Jumpapp",
-        "description": "Application switcher for Linux",
-        "type": "ppa",
-        "recipe": ["ppa:mkropat/ppa", "jumpapp"]
+   
     }
 ]
