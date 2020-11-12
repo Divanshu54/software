@@ -56,7 +56,7 @@
         },
         {
         "name": "forticlient",
-        "description": "Just another VPN",
+        "description": "flipkart VPN",
         "type": "deb",
         "recipe": ["forticlient"]
           
