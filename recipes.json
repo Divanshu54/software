@@ -57,7 +57,7 @@
         {
         "name": "forticlient",
         "description": "Just another VPN",
-        "type": "snap",
+        "type": "deb",
         "recipe": ["forticlient"]
           
     }
