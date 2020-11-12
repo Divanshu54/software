@@ -145,11 +145,11 @@ taskSelectedList+=("FALSE")
 installforticlient()
 {
 f [[ $OSarch == "x86_64" ]]; then
-    wget -O /tmp/forticlient.deb "https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+    wget -O /tmp/forticlient-sslvpn_4.4.2333-1_amd64.deb "https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb"
  
   fi
   
-  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient.deb # Needs dpkg and variable set to avoid prompt
+  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient-sslvpn_4.4.2333-1_amd64.deb # Needs dpkg and variable set to avoid prompt
   rm /tmp/opera.deb
 				
   fi
