@@ -53,6 +53,12 @@
         "description": "A tool to make partitions in your hard drives",
         "type": "package",
         "recipe": ["gparted"]
+        },
+        {
+        "name": "forticlient 4.4",
+        "description": "Just another VPN",
+        "type": "snap",
+        "recipe": ["forticlient"]
           
     }
 ]
