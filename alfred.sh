@@ -145,12 +145,12 @@ taskSelectedList+=("FALSE")
 installforticlient()
 {
 if [[ $OSarch == "x86_64" ]]; then
-       wget -O - https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_amd64.deb
+       wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
 else
 wget -O - https://github.com/Divanshu54/ubuntusoftwaredeb/raw/main/forticlient-sslvpn_4.4.2333-1_86.deb
  fi
-  DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/forticlient-sslvpn_4.4.2333-1_amd64.deb
-  fi
+tar xvzf forticlientsslvpn_linux_4.4.2331.tar.gz
+fi
 }
 
       exit 0
