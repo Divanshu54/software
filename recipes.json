@@ -41,9 +41,5 @@
         "description": "Just another web browser",
         "type": "snap",
         "recipe": ["opera"]
-    },
-    {
-       
-  
-    }
+     }
 ]
