@@ -145,7 +145,8 @@ taskSelectedList+=("FALSE")
 installforticlient()
 {
 if [[ $OSarch == "x64" ]]; then
-installPackage "https://hadler.me/files/forticlient-sslvpn_4.4.2333-1_amd64.deb"
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
+  
   else
       >&2 echo "Your system is not supported by Google Chrome"
       return 1
