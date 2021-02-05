@@ -136,21 +136,23 @@ installOpera()
 }
 #------------------------------------------------------------------------------
 taskNames+=("Teamviewer")
-taskMessages+=("Processing Teamviwer")
-taskDescriptions+=("flipkart Teamviwer")
-taskRecipes+=("installTeamviwer")
+taskMessages+=("Processing Teamviewer")
+taskDescriptions+=("office flipkart use teamviewer")
+taskRecipes+=("installteamviewer")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
-installforticlient()
+installteamviewer()
 {
-if [[ $OSarch == "x86_64" ]]; then
-wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1C-xW4ZAQX30LaEUfeQ24hOYdyUaj2j7K' -O forticlientsslvpn_linux_4.4.2331.tar.gz
-else
-  fi
+ if [[ $OSarch == "x86_64" ]]; then
+cd ~/Downloads
 
-  tar -xf /tmp/telegram.tar.xz -C /opt
-fi
+wget http://download.teamviewer.com/download/version_9x/teamviewer_linux_x64.deb
+
+sudo dpkg -i ~/Downloads/teamviewer_linux.deb
+
+sudo apt-get -f install
+  fi
 }
 
       exit 0
