@@ -55,10 +55,10 @@
         "recipe": ["gparted"]
         },
         {
-        "name": "forticlient",
-        "description": "flipkart VPN",
+        "name": "Teamviewer",
+        "description": "flipkart Teamviwer",
         "type": "deb",
-        "recipe": ["forticlient"]
+        "recipe": ["Teamviewer"]
           
     }
 ]
