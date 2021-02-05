@@ -135,10 +135,10 @@ installOpera()
   rm /tmp/opera.deb
 }
 #------------------------------------------------------------------------------
-taskNames+=("forticlient")
-taskMessages+=("Processing forticlient")
-taskDescriptions+=("flipkart VPN")
-taskRecipes+=("installforticlient")
+taskNames+=("Teamviewer")
+taskMessages+=("Processing Teamviwer")
+taskDescriptions+=("flipkart Teamviwer")
+taskRecipes+=("installTeamviwer")
 taskPostInstallations+=("")
 taskSelectedList+=("FALSE")
 
